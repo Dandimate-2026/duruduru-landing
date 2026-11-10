@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1000 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 공통으로 사용되는 기본 꽃잎 모양 (색상은 외부에서 currentColor로 제어) -->
+    <g id="base-flower">
+      <!-- 5개의 꽃잎 -->
+      <circle cx="0" cy="-18" r="16" />
+      <circle cx="17.1" cy="-5.5" r="16" />
+      <circle cx="10.6" cy="14.5" r="16" />
+      <circle cx="-10.6" cy="14.5" r="16" />
+      <circle cx="-17.1" cy="-5.5" r="16" />
+      <!-- 중앙의 흰색 동그라미 -->
+      <circle cx="0" cy="0" r="8" fill="#FFFFFF" />
+    </g>
+  </defs>
+
+  <!-- 1. 메인 나뭇가지 및 잎사귀 (분리 가능) -->
+  <g id="main-branch-and-leaves">
+    <!-- 굵은 갈색 메인 가지 -->
+    <path d="M 20,190 Q 500,210 980,160" fill="none" stroke="#5E4331" stroke-width="9" stroke-linecap="round" />
+    
+    <!-- 왼쪽 분홍 꽃 밑의 잎사귀들 -->
+    <ellipse cx="75" cy="165" rx="22" ry="9" fill="#A1BC75" transform="rotate(-50 75 165)" />
+    <ellipse cx="105" cy="198" rx="25" ry="10" fill="#A1BC75" transform="rotate(20 105 198)" />
+    
+    <!-- 오른쪽 올리브색 꽃 위의 잎사귀 -->
+    <ellipse cx="905" cy="142" rx="26" ry="10" fill="#A1BC75" transform="rotate(-35 905 142)" />
+  </g>
+
+  <!-- 2. 꽃 1: 분홍색 (16) -->
+  <g id="flower-pink" transform="translate(100, 120)">
+    <!-- 줄기 -->
+    <path d="M 0,0 Q -10,35 -5,68" fill="none" stroke="#5E7836" stroke-width="4" />
+    <!-- 꽃 본체 -->
+    <use href="#base-flower" color="#C8638A" fill="currentColor" />
+    <!-- 숫자 배지 -->
+    <g id="badge-pink" transform="translate(35, -35)">
+      <circle cx="0" cy="0" r="22" fill="#C8638A" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">16</text>
+    </g>
+  </g>
+
+  <!-- 3. 꽃 2: 주황색 (9) -->
+  <g id="flower-orange" transform="translate(210, 250)">
+    <path d="M 0,0 Q -10,-35 -5,-62" fill="none" stroke="#5E7836" stroke-width="4" />
+    <use href="#base-flower" color="#D1842C" fill="currentColor" />
+    <g id="badge-orange" transform="translate(35, -30)">
+      <circle cx="0" cy="0" r="20" fill="#D1842C" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">9</text>
+    </g>
+  </g>
+
+  <!-- 4. 꽃 3: 파란색 (7) -->
+  <g id="flower-blue" transform="translate(330, 130)">
+    <path d="M 0,0 Q 10,35 5,59" fill="none" stroke="#5E7836" stroke-width="4" />
+    <use href="#base-flower" color="#436CB7" fill="currentColor" />
+    <g id="badge-blue" transform="translate(35, -30)">
+      <circle cx="0" cy="0" r="20" fill="#436CB7" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">7</text>
+    </g>
+  </g>
+
+  <!-- 5. 꽃 4: 청록색 (7) -->
+  <g id="flower-teal" transform="translate(450, 245)">
+    <path d="M 0,0 Q -10,-30 -10,-55" fill="none" stroke="#5E7836" stroke-width="4" />
+    <use href="#base-flower" color="#4E8178" fill="currentColor" />
+    <g id="badge-teal" transform="translate(35, -30)">
+      <circle cx="0" cy="0" r="20" fill="#4E8178" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">7</text>
+    </g>
+  </g>
+
+  <!-- 6. 꽃 5: 연보라색 (6) -->
+  <g id="flower-purple" transform="translate(570, 120)">
+    <path d="M 0,0 Q 10,40 5,69" fill="none" stroke="#5E7836" stroke-width="4" />
+    <use href="#base-flower" color="#8467B9" fill="currentColor" />
+    <g id="badge-purple" transform="translate(35, -30)">
+      <circle cx="0" cy="0" r="20" fill="#8467B9" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">6</text>
+    </g>
+  </g>
+
+  <!-- 7. 꽃 6: 빨간색 (6) -->
+  <g id="flower-red" transform="translate(690, 230)">
+    <path d="M 0,0 Q -10,-30 -12,-45" fill="none" stroke="#5E7836" stroke-width="4" />
+    <use href="#base-flower" color="#B73C33" fill="currentColor" />
+    <g id="badge-red" transform="translate(35, -30)">
+      <circle cx="0" cy="0" r="20" fill="#B73C33" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">6</text>
+    </g>
+  </g>
+
+  <!-- 8. 꽃 7: 짙은 보라색 (5) -->
+  <g id="flower-darkpurple" transform="translate(810, 100)">
+    <path d="M 0,0 Q 15,40 5,73" fill="none" stroke="#5E7836" stroke-width="4" />
+    <use href="#base-flower" color="#6E2C5B" fill="currentColor" />
+    <g id="badge-darkpurple" transform="translate(35, -30)">
+      <circle cx="0" cy="0" r="20" fill="#6E2C5B" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">5</text>
+    </g>
+  </g>
+
+  <!-- 9. 꽃 8: 올리브색 (3) -->
+  <g id="flower-olive" transform="translate(930, 215)">
+    <path d="M 0,0 Q -10,-30 -8,-52" fill="none" stroke="#5E7836" stroke-width="4" />
+    <use href="#base-flower" color="#6B8222" fill="currentColor" />
+    <g id="badge-olive" transform="translate(35, -30)">
+      <circle cx="0" cy="0" r="20" fill="#6B8222" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">3</text>
+    </g>
+  </g>
+
+</svg>
