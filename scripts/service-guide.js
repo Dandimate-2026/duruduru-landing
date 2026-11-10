@@ -9,6 +9,11 @@
     e.preventDefault();
     destination = link.href;
     lastFocus = link;
+    const installSheet = link.closest('.isheet');
+    if (installSheet) {
+      installSheet.hidden = true;
+      lastFocus = document.getElementById('instBtn');
+    }
     overlay.hidden = false;
     overlay.querySelector('.demo-guide').scrollTop = 0;
     document.body.style.overflow = 'hidden';
